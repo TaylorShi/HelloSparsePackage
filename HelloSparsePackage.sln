@@ -1,13 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32210.238
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "DemoForSparsePacking", "DemoForSparsePacking\DemoForSparsePacking.wapproj", "{8B28989F-B693-48FF-B92C-2F275C0821BC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoForSparseWinforms", "DemoForSparseWinforms\DemoForSparseWinforms.csproj", "{F77BAD10-5201-494D-BC4C-3A097BC70788}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoForSparseWPF", "DemoForSparseWPF\DemoForSparseWPF.csproj", "{B18D0876-0330-40B8-BDF0-C3036B6306A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C09B7036-8B59-4A7F-9C16-EC5E52132DA4}"
+	ProjectSection(SolutionItems) = preProject
+		Template\AppxManifest.xml = Template\AppxManifest.xml
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoForSparseCpp", "DemoForSparseCpp\DemoForSparseCpp.vcxproj", "{358D74F0-0444-4923-BA40-37C3591A4824}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +100,20 @@ Global
 		{B18D0876-0330-40B8-BDF0-C3036B6306A6}.Release|x64.Build.0 = Release|Any CPU
 		{B18D0876-0330-40B8-BDF0-C3036B6306A6}.Release|x86.ActiveCfg = Release|Any CPU
 		{B18D0876-0330-40B8-BDF0-C3036B6306A6}.Release|x86.Build.0 = Release|Any CPU
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Debug|ARM.ActiveCfg = Debug|Win32
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Debug|x64.ActiveCfg = Debug|x64
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Debug|x64.Build.0 = Debug|x64
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Debug|x86.ActiveCfg = Debug|Win32
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Debug|x86.Build.0 = Debug|Win32
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Release|Any CPU.ActiveCfg = Release|Win32
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Release|ARM.ActiveCfg = Release|Win32
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Release|ARM64.ActiveCfg = Release|Win32
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Release|x64.ActiveCfg = Release|x64
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Release|x64.Build.0 = Release|x64
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Release|x86.ActiveCfg = Release|Win32
+		{358D74F0-0444-4923-BA40-37C3591A4824}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

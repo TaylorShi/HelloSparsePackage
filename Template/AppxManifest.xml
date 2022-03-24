@@ -8,11 +8,11 @@
   xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
   xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
   IgnorableNamespaces="uap uap2 uap3 rescap desktop uap10">
-	<Identity Name="PhotoStoreDemo" ProcessorArchitecture="x86" Publisher="CN=MyPubisher" Version="1.0.0.0" />
+	<Identity Name="DemoForSparsePackage" ProcessorArchitecture="x86" Publisher="CN=Contoso Software, O=Contoso Corporation, C=US" Version="1.0.0.0" />
 	<Properties>
-		<DisplayName>Sparse Package Template</DisplayName>
-		<PublisherDisplayName>My Publisher</PublisherDisplayName>
-		<Logo>Assets\storelogo.png</Logo>
+		<DisplayName>SparsePackageDemo</DisplayName>
+		<PublisherDisplayName>Contoso Software</PublisherDisplayName>
+		<Logo>Assets\StoreLogo.png</Logo>
 		<uap10:AllowExternalContent>true</uap10:AllowExternalContent>
 	</Properties>
 	<Resources>
@@ -26,11 +26,24 @@
 		<rescap:Capability Name="unvirtualizedResources"/>
 	</Capabilities>
 	<Applications>
-		<Application Id="MyApp" Executable="MyApp.exe" uap10:TrustLevel="mediumIL" uap10:RuntimeBehavior="win32App">
-			<uap:VisualElements DisplayName="MyApp" Description="AppDescription" BackgroundColor="transparent" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png">
+		<Application Id="Contoso.DemoForSparsePackage" Executable="DemoForSparsePackage.exe" uap10:TrustLevel="mediumIL" uap10:RuntimeBehavior="win32App">
+			<uap:VisualElements DisplayName="DemoForSparsePackage" Description="AppDescription" BackgroundColor="transparent" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png">
 				<uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png"></uap:DefaultTile>
 				<uap:SplashScreen Image="Assets\SplashScreen.png" />
 			</uap:VisualElements>
 		</Application>
 	</Applications>
+	<Extensions>
+		<uap:Extension Category="windows.shareTarget">
+			<uap:ShareTarget Description="发送到SparsePackageDemo">
+				<uap:SupportedFileTypes>
+					<uap:FileType>.jpg</uap:FileType>
+					<uap:FileType>.png</uap:FileType>
+					<uap:FileType>.gif</uap:FileType>
+				</uap:SupportedFileTypes>
+				<uap:DataFormat>StorageItems</uap:DataFormat>
+				<uap:DataFormat>Bitmap</uap:DataFormat>
+			</uap:ShareTarget>
+		</uap:Extension>
+	</Extensions>
 </Package>
